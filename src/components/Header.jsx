@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Code, Home, User, Briefcase, Mail } from 'lucide-react';
+import { Menu, X, Home, User, Briefcase, Mail } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,13 +23,12 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-[#1F1F1F] shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            {/* <Code className="h-8 w-8 text-blue-400" /> */}
-            <span className="text-xl font-bold text-white">Fathima Naja.p</span>
+            <span className="text-xl font-bold text-[#F0EDE5]">Fathima Naja.p</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -43,7 +42,7 @@ const Header = () => {
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className="flex items-center space-x-1 text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                className="flex items-center space-x-1 text-[#F0EDE5] hover:text-[#D6A77A] transition-colors duration-200"
               >
                 <Icon className="h-4 w-4" />
                 <span>{name}</span>
@@ -54,7 +53,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white hover:text-blue-400 transition-colors"
+            className="md:hidden text-[#F0EDE5] hover:text-[#D6A77A] transition-colors"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -62,7 +61,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 bg-gray-900/95 backdrop-blur-sm rounded-lg mt-2">
+          <div className="md:hidden py-4 bg-[#2B2B2B]/95 backdrop-blur-sm rounded-lg mt-2">
             <nav className="flex flex-col space-y-4">
               {[
                 { name: 'Home', id: 'home', icon: Home },
@@ -73,7 +72,7 @@ const Header = () => {
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
-                  className="flex items-center space-x-2 text-gray-300 hover:text-blue-400 transition-colors duration-200 px-4"
+                  className="flex items-center space-x-2 text-[#F0EDE5] hover:text-[#C08B8B] transition-colors duration-200 px-4"
                 >
                   <Icon className="h-4 w-4" />
                   <span>{name}</span>

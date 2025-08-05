@@ -52,13 +52,13 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-[#1F1F1F]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Get In <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Touch</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#F0EDE5] mb-4">
+            Get In <span className="bg-gradient-to-r from-[#D6A77A] to-[#C08B8B] bg-clip-text text-transparent">Touch</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl text-[#A1A1A1] max-w-3xl mx-auto">
             Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
           </p>
         </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Let's Connect</h3>
-              <p className="text-gray-400 mb-8">
+              <p className="text-[#A1A1A1] mb-8">
                 I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
               </p>
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm border border-gray-700 hover:border-gray-600 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#D6A77A] to-[#C08B8B] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -96,7 +96,7 @@ const Contact = () => {
             {/* Social Links */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 ">
                 {[
                   { icon: Github, href: 'https://github.com/Fathima-naj', label: 'GitHub' },
                   { icon: Linkedin, href: 'https://www.linkedin.com/in/fathima-naja-7890a7337', label: 'LinkedIn' },
@@ -106,7 +106,7 @@ const Contact = () => {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-all duration-300 transform hover:scale-110"
+                    className="w-12 h-12 bg-[#2B2B2B] hover:bg-[#383838] rounded-lg flex items-center justify-center text-gray-400 hover:text-[#D6A77A] transition-all duration-300 transform hover:scale-110"
                     aria-label={label}
                   >
                     <Icon className="h-5 w-5" />
@@ -117,11 +117,11 @@ const Contact = () => {
           </div>
 
           {/* Right: Contact Form */}
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
+          <div className="bg-[#2B2B2B] backdrop-blur-sm rounded-2xl p-8 border border-[#3A3A3A] ">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-[#A1A1A1] mb-2">
                     Your Name
                   </label>
                   <input
@@ -131,12 +131,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="w-full px-4 py-3 bg-[#2F2F2F] border border-[#3A3A3A] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#D6A77A] focus:ring-1 focus:ring-[#3A3A3A]"
                     placeholder="Jane Thomas"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-[#A1A1A1] mb-2">
                     Your Email
                   </label>
                   <input
@@ -146,14 +146,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="w-full px-4 py-3 bg-[#2F2F2F] border border-[#3A3A3A] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#D6A77A] focus:ring-1 focus:ring-[#3A3A3A]"
                     placeholder="jane@gmail.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-[#A1A1A1] mb-2">
                   Subject
                 </label>
                 <input
@@ -163,13 +163,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-4 py-3 bg-[#2F2F2F] border border-[#3A3A3A] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#D6A77A] focus:ring-1 focus:ring-[#3A3A3A]"
                   placeholder="Project Discussion"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-[#A1A1A1] mb-2">
                   Message
                 </label>
                 <textarea
@@ -179,7 +179,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
+                  className="w-full px-4 py-3 bg-[#2F2F2F] border border-[#3A3A3A] rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-[#D6A77A] focus:ring-1 focus:ring-[#3A3A3A] resize-none"
                   placeholder="Tell me about your project or how I can help you..."
                 />
               </div>
@@ -190,7 +190,7 @@ const Contact = () => {
                 className={`w-full py-3 px-6 rounded-lg font-semibold flex items-center justify-center space-x-2 ${
                   isSubmitting
                     ? 'bg-gray-600 cursor-not-allowed'
-                    : 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transform hover:scale-105'
+                    : 'bg-gradient-to-r from-[#D6A77A] to-[#C08B8B] hover:from-[#A87D6C] hover:to-[#8D5F5F] transform hover:scale-105'
                 } text-white transition-all duration-300`}
               >
                 {isSubmitting ? (
